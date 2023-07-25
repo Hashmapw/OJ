@@ -1,0 +1,16 @@
+{
+    "files.associations": {
+        "stdio.h": "c",
+        "P1205.C": "cpp",
+        "L1-2.C": "cpp",
+        "2.1-26.C": "cpp",
+        "2.C": "cpp",
+        "stdlib.h": "c",
+        "xlocale": "c",
+        "vector": "c",
+        "xstring": "c",
+        "xutility": "c"
+    },
+    "code-runner.runInTerminal": true,
+    "C_Cpp.errorSquiggles": "disabled"
+}
