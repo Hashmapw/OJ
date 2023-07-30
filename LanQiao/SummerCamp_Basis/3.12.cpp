@@ -1,45 +1,39 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-const int N = 1e2 + 10;
+const int N = 2e6 + 10;
 
 typedef long long ll;
 ll n, q;
 ll l, r;
 ll pre[N];
-bool sushu[N];
+vector<int> prime;
+bool primeStatus[N] = {true, true}; // 0和1均不是素数
 
-bool isprime(ll x)
+void fastPrime(int n)
 {
-    if (x < 2)
-        return false;
-    if (x == 2 || x == 3)
-        return true;
-    for (int i = 2; i <= sqrt(x) + 1; i++)
+    for (int i = 2; i <= n; i++)
     {
-        if (x % i == 0)
+        if (primeStatus[i] == false)
         {
-            return false;
+            prime.push_back(i);
+        }
+        for (ll j = 0; j < prime.size() && i * prime[j] <= n; j++)
+        {
+            primeStatus[i * prime[j]] = true;
+            if (i % prime[j] == 0)
+                break;
         }
     }
-    return true;
 }
 
 int main()
 {
-    ios::sync_with_stdio(false);
-    cin.tie(0);
-    cout.tie(0);
-    cin >> n >> q;
-    memset(sushu, false, sizeof(sushu));
+    scanf("%ld %ld", &n, &q);
+    fastPrime(n);
     for (int i = 1; i <= n; i++)
     {
-        if (isprime(i))
-            sushu[i] = true;
-    }
-    for (int i = 1; i <= n; i++)
-    {
-        if (sushu[i / 2]==true && sushu[i]==true)
+        if (primeStatus[i / 2] == false && primeStatus[i] == false)
         {
             pre[i] = pre[i - 1] + 1;
         }
@@ -51,7 +45,7 @@ int main()
     while (q--)
     {
         ll l, r;
-        cin >> l >> r;
-        cout << pre[r] - pre[l - 1] << endl;
+        scanf("%ld %ld", &l, &r);
+        printf("%ld\n", pre[r] - pre[l - 1]);
     }
 }

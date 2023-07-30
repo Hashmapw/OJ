@@ -7,6 +7,7 @@ const int N = 1e5 + 10;
 string s;
 ll pre[N];
 ll x;
+ll f[N];
 
 int main()
 {
@@ -22,25 +23,18 @@ int main()
     pre[0];
     for (int i = 0; i < len; i++)
     {
-        pre[i + 1] = pre[i] + s[i] - '0'; // 实现下标从0到下标到1的转换
+        pre[i + 1] = (pre[i] + s[i] - '0') % x; // 实现下标从0到下标到1的转换
     }
-    ll now = 0, maxlen = 0, nowlen = 0;
-    bool flag = false;
-    for (int i = 1; i <= len - 1; i++)
+    ll maxlen = len * 9;
+    for (int i = 1; i <= maxlen; i++)
+        f[i] = N;
+    int anslen = 0;
+    for (int j = 1; j <= len; j++)
     {
-        for (int j = i + 1; j <= len; j++)
-        {
-            now = pre[j] - pre[i - 1];
-            nowlen = j - i + 1;
-            if (nowlen > maxlen && now % x == 0)
-            {
-                flag = true;
-                maxlen = nowlen;
-            }
-        }
+        if (j - f[pre[j]] > anslen)
+            anslen = j - f[pre[j]];
+        if (f[pre[j]] == N)
+            f[pre[j]] = j;
     }
-    if (flag)
-        cout << maxlen;
-    else
-        cout << "0";
+    cout << anslen;
 }
