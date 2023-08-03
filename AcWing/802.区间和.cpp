@@ -21,6 +21,13 @@ int find(int x)
 	}
 	return r+1;
 }
+//find函数也可以写作
+/*
+int find(int x)
+{
+	  return lower_bound(alls.begin(),alls.end(),x)-alls.begin()+1;
+}
+*/
 
 vector<int>::iterator unique(vector<int> &a)
 {
@@ -41,7 +48,6 @@ int main()
 		int x,c;
 		cin>>x>>c;
 		add.push_back({x,c});
-		
 		alls.push_back(x);
 	}
 	for(int i=0;i<m;i++)

@@ -1,5 +1,5 @@
 {
-    "current_index": 25,
+    "current_index": 33,
     "name": "Acwing算法基础课",
     "problems": [
         {
@@ -21,6 +21,7 @@
             "url": "https://www.acwing.com/problem/content/787/"
         },
         {
+            "answer_program": "D:/Develop/VSCode/OJ/AcWing/789.数的范围.cpp",
             "cases": [
                 {
                     "expected": "3 4\n5 5\n-1 -1",
@@ -39,6 +40,7 @@
             "url": "https://www.acwing.com/problem/content/791/"
         },
         {
+            "answer_program": "D:/Develop/VSCode/OJ/AcWing/790.数的三次方跟.cpp",
             "cases": [
                 {
                     "expected": "10.000000",
@@ -158,6 +160,7 @@
             "url": "https://www.acwing.com/problem/content/798/"
         },
         {
+            "answer_program": "D:/Develop/VSCode/OJ/AcWing/797.差分.cpp",
             "cases": [
                 {
                     "expected": "3 4 5 3 4 2\n",
@@ -176,6 +179,7 @@
             "url": "https://www.acwing.com/problem/content/799/"
         },
         {
+            "answer_program": "D:/Develop/VSCode/OJ/AcWing/798.差分矩阵.cpp",
             "cases": [
                 {
                     "expected": "2 3 4 1\n4 3 4 1\n2 2 2 2\n",
@@ -230,6 +234,7 @@
             "url": "https://www.acwing.com/problem/content/803/"
         },
         {
+            "answer_program": "D:/Develop/VSCode/OJ/AcWing/802.区间和.cpp",
             "cases": [
                 {
                     "expected": "8\n0\n5\n",
@@ -248,6 +253,7 @@
             "url": "https://www.acwing.com/problem/content/804/"
         },
         {
+            "answer_program": "D:/Develop/VSCode/OJ/AcWing/803.区间合并.cpp",
             "cases": [
                 {
                     "expected": "3\n",
@@ -472,6 +478,152 @@
             "time_limit": 0,
             "time_limit_unit": 0,
             "url": "https://www.acwing.com/problem/content/840/"
+        },
+        {
+            "answer_program": "D:/Develop/VSCode/OJ/AcWing/839.模拟堆.cpp",
+            "cases": [
+                {
+                    "expected": "-10\n6\n",
+                    "expected_output_filename": "",
+                    "input": "8\nI -10\nPM\nI -10\nD 1\nC 2 8\nI 6\nPM\nDM\n",
+                    "input_filename": "",
+                    "name": "试题案例1"
+                }
+            ],
+            "description": "",
+            "memory_limit": 0,
+            "memory_limit_unit": 1,
+            "name": "839. 模拟堆",
+            "time_limit": 0,
+            "time_limit_unit": 0,
+            "url": "https://www.acwing.com/problem/content/841/"
+        },
+        {
+            "cases": [
+                {
+                    "expected": "Yes\nNo\n",
+                    "expected_output_filename": "",
+                    "input": "5\nI 1\nI 2\nI 3\nQ 2\nQ 5\n",
+                    "input_filename": "",
+                    "name": "试题案例1"
+                }
+            ],
+            "description": "",
+            "memory_limit": 0,
+            "memory_limit_unit": 1,
+            "name": "840. 模拟散列表",
+            "time_limit": 0,
+            "time_limit_unit": 0,
+            "url": "https://www.acwing.com/problem/content/842/"
+        },
+        {
+            "cases": [
+                {
+                    "expected": "Yes\nNo\nYes\n",
+                    "expected_output_filename": "",
+                    "input": "8 3\naabbaabb\n1 3 5 7\n1 3 6 8\n1 2 1 2\n",
+                    "input_filename": "",
+                    "name": "试题案例1"
+                }
+            ],
+            "description": "",
+            "memory_limit": 0,
+            "memory_limit_unit": 1,
+            "name": "841. 字符串哈希",
+            "time_limit": 0,
+            "time_limit_unit": 0,
+            "url": "https://www.acwing.com/problem/content/843/"
+        },
+        {
+            "cases": [
+                {
+                    "expected": "1 1\n",
+                    "expected_output_filename": "",
+                    "input": "4 5 6\n1 2 4 7\n3 4 6 8 9\n",
+                    "input_filename": "",
+                    "name": "试题案例1"
+                }
+            ],
+            "description": "",
+            "memory_limit": 0,
+            "memory_limit_unit": 1,
+            "name": "800. 数组元素的目标和",
+            "time_limit": 0,
+            "time_limit_unit": 0,
+            "url": "https://www.acwing.com/problem/content/802/"
+        },
+        {
+            "cases": [
+                {
+                    "expected": "3\n",
+                    "expected_output_filename": "",
+                    "input": "3\n1 2 3\n",
+                    "input_filename": "",
+                    "name": "试题案例1"
+                }
+            ],
+            "description": "",
+            "memory_limit": 0,
+            "memory_limit_unit": 1,
+            "name": "143. 最大异或对",
+            "time_limit": 0,
+            "time_limit_unit": 0,
+            "url": "https://www.acwing.com/problem/content/145/"
+        },
+        {
+            "answer_program": "D:/Develop/VSCode/OJ/AcWing/240.食物链.cpp",
+            "cases": [
+                {
+                    "expected": "3\n",
+                    "expected_output_filename": "",
+                    "input": "100 7\n1 101 1\n2 1 2\n2 2 3\n2 3 3\n1 1 3\n2 3 1\n1 5 5\n",
+                    "input_filename": "",
+                    "name": "试题案例1"
+                }
+            ],
+            "description": "",
+            "memory_limit": 0,
+            "memory_limit_unit": 1,
+            "name": "240. 食物链",
+            "time_limit": 0,
+            "time_limit_unit": 0,
+            "url": "https://www.acwing.com/problem/content/242/"
+        },
+        {
+            "cases": [
+                {
+                    "expected": "1 2 3\n1 3 2\n2 1 3\n2 3 1\n3 1 2\n3 2 1\n",
+                    "expected_output_filename": "",
+                    "input": "3\n",
+                    "input_filename": "",
+                    "name": "试题案例1"
+                }
+            ],
+            "description": "",
+            "memory_limit": 0,
+            "memory_limit_unit": 1,
+            "name": "842. 排列数字",
+            "time_limit": 0,
+            "time_limit_unit": 0,
+            "url": "https://www.acwing.com/problem/content/844/"
+        },
+        {
+            "cases": [
+                {
+                    "expected": ".Q..\n...Q\nQ...\n..Q.\n\n..Q.\nQ...\n...Q\n.Q..\n",
+                    "expected_output_filename": "",
+                    "input": "4\n",
+                    "input_filename": "",
+                    "name": "试题案例1"
+                }
+            ],
+            "description": "",
+            "memory_limit": 0,
+            "memory_limit_unit": 1,
+            "name": "n-皇后问题",
+            "time_limit": 0,
+            "time_limit_unit": 0,
+            "url": "https://www.acwing.com/problem/content/845/"
         }
     ]
 }
