@@ -1,6 +1,6 @@
 {
-    "current_index": 33,
-    "name": "Acwing算法基础课",
+    "current_index": 38,
+    "name": "算法基础课",
     "problems": [
         {
             "cases": [
@@ -443,7 +443,6 @@
             "url": "https://www.acwing.com/problem/content/838/"
         },
         {
-            "answer_program": "D:/Develop/VSCode/OJ/AcWing/837. 连通块中点的数量.cpp",
             "cases": [
                 {
                     "expected": "Yes\n2\n3\n",
@@ -462,6 +461,7 @@
             "url": "https://www.acwing.com/problem/content/839/"
         },
         {
+            "answer_program": "D:/Develop/VSCode/OJ/AcWing/838.堆排序.cpp",
             "cases": [
                 {
                     "expected": "1 2 3\n",
@@ -610,9 +610,52 @@
         {
             "cases": [
                 {
-                    "expected": ".Q..\n...Q\nQ...\n..Q.\n\n..Q.\nQ...\n...Q\n.Q..\n",
+                    "expected": "..Q.\nQ...\n...Q\n.Q..\n\n.Q..\n...Q\nQ...\n..Q.\n\n",
                     "expected_output_filename": "",
-                    "input": "4\n",
+                    "input": "4",
+                    "input_filename": "",
+                    "name": "试题案例1"
+                },
+                {
+                    "expected": ".Q..\n...Q\nQ...\n..Q.\n\n..Q.\nQ...\n...Q\n.Q..\n\n",
+                    "expected_output_filename": "",
+                    "input": "4",
+                    "input_filename": "",
+                    "name": "试题案例2"
+                }
+            ],
+            "description": "",
+            "memory_limit": 0,
+            "memory_limit_unit": 1,
+            "name": "843. n-皇后问题",
+            "time_limit": 0,
+            "time_limit_unit": 0,
+            "url": "https://www.acwing.com/problem/content/845/"
+        },
+        {
+            "cases": [
+                {
+                    "expected": "8\n",
+                    "expected_output_filename": "",
+                    "input": "5 5\n0 1 0 0 0\n0 1 0 1 0\n0 0 0 0 0\n0 1 1 1 0\n0 0 0 1 0\n",
+                    "input_filename": "",
+                    "name": "试题案例1"
+                }
+            ],
+            "description": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\np, li { white-space: pre-wrap; }\n</style></head><body style=\" font-family:'Microsoft Yahei'; font-size:22px; font-weight:400; font-style:normal;\">\n<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p></body></html>",
+            "memory_limit": 64,
+            "memory_limit_unit": 1,
+            "name": "844. 走迷宫",
+            "time_limit": 2,
+            "time_limit_unit": 0,
+            "url": "https://www.acwing.com/problem/content/846/"
+        },
+        {
+            "cases": [
+                {
+                    "expected": "4\n",
+                    "expected_output_filename": "",
+                    "input": "9\n1 2\n1 7\n1 4\n2 8\n2 5\n4 3\n3 9\n4 6\n",
                     "input_filename": "",
                     "name": "试题案例1"
                 }
@@ -620,10 +663,102 @@
             "description": "",
             "memory_limit": 0,
             "memory_limit_unit": 1,
-            "name": "n-皇后问题",
+            "name": "846. 树的重心",
             "time_limit": 0,
             "time_limit_unit": 0,
-            "url": "https://www.acwing.com/problem/content/845/"
+            "url": "https://www.acwing.com/problem/content/848/"
+        },
+        {
+            "cases": [
+                {
+                    "expected": "1\n",
+                    "expected_output_filename": "",
+                    "input": "4 5\n1 2\n2 3\n3 4\n1 3\n1 4\n",
+                    "input_filename": "",
+                    "name": "试题案例1"
+                }
+            ],
+            "description": "",
+            "memory_limit": 0,
+            "memory_limit_unit": 1,
+            "name": "847. 图中点的层次",
+            "time_limit": 0,
+            "time_limit_unit": 0,
+            "url": "https://www.acwing.com/problem/content/849/"
+        },
+        {
+            "cases": [
+                {
+                    "expected": "1 2 3\n",
+                    "expected_output_filename": "",
+                    "input": "3 3\n1 2\n2 3\n1 3\n",
+                    "input_filename": "",
+                    "name": "试题案例1"
+                }
+            ],
+            "description": "",
+            "memory_limit": 0,
+            "memory_limit_unit": 1,
+            "name": "848. 有向图的拓扑序列",
+            "time_limit": 0,
+            "time_limit_unit": 0,
+            "url": "https://www.acwing.com/problem/content/850/"
+        },
+        {
+            "answer_program": "D:/Develop/VSCode/OJ/AcWing/849.Dijkstra求最短路 I.cpp",
+            "cases": [
+                {
+                    "expected": "3\n",
+                    "expected_output_filename": "",
+                    "input": "3 3\n1 2 2\n2 3 1\n1 3 4\n",
+                    "input_filename": "",
+                    "name": "试题案例1"
+                }
+            ],
+            "description": "",
+            "memory_limit": 0,
+            "memory_limit_unit": 1,
+            "name": "849. Dijkstra求最短路 I",
+            "time_limit": 0,
+            "time_limit_unit": 0,
+            "url": "https://www.acwing.com/problem/content/851/"
+        },
+        {
+            "answer_program": "D:/Develop/VSCode/OJ/AcWing/850.Dijkstra求最短路 II.cpp",
+            "cases": [
+                {
+                    "expected": "3\n",
+                    "expected_output_filename": "",
+                    "input": "3 3\n1 2 2\n2 3 1\n1 3 4\n",
+                    "input_filename": "",
+                    "name": "试题案例1"
+                }
+            ],
+            "description": "",
+            "memory_limit": 0,
+            "memory_limit_unit": 1,
+            "name": "850. Dijkstra求最短路 II",
+            "time_limit": 0,
+            "time_limit_unit": 0,
+            "url": "https://www.acwing.com/problem/content/852/"
+        },
+        {
+            "cases": [
+                {
+                    "expected": "3\n",
+                    "expected_output_filename": "",
+                    "input": "3 3 1\n1 2 1\n2 3 1\n1 3 3\n",
+                    "input_filename": "",
+                    "name": "试题案例1"
+                }
+            ],
+            "description": "",
+            "memory_limit": 0,
+            "memory_limit_unit": 1,
+            "name": "853. 有边数限制的最短路",
+            "time_limit": 0,
+            "time_limit_unit": 0,
+            "url": "https://www.acwing.com/problem/content/855/"
         }
     ]
 }
