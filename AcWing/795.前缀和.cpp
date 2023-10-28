@@ -8,8 +8,11 @@ int a[N],s[N];
 
 int main()
 {
-	scanf("%d%d",&n,&m);
-	for(int i=1;i<=n;i++)  scanf("%d",&a[i]);
+	FILE *f1,*f2;
+	f1 = fopen("1.txt","rw+");
+	f2 = fopen("2.txt","rw+");
+	fscanf(f1,"%d%d",&n,&m);
+	for(int i=1;i<=n;i++)  fscanf(f1,"%d",&a[i]);
 	
 	//求前缀和数组
 	for(int i=1;i<=n;i++)  s[i]=s[i-1]+a[i];
@@ -17,9 +20,10 @@ int main()
 	while(m--)
 	{
 		int l,r;
-		scanf("%d%d",&l,&r);
-		printf("%d\n",s[r]-s[l-1]);
+		fscanf(f1,"%d%d",&l,&r);
+		fprintf(f2,"%d\n",s[r]-s[l-1]);
 	}
-	
+	fclose(f1);
+	fclose(f2);
 	return 0;
 }
