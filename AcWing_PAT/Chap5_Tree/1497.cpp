@@ -10,11 +10,11 @@ int q[N];
 
 int build(int il, int ir, int pl, int pr)
 {
-    int root = postorder[pr];
+    int root = postorder[pr];   
     int k = pos[root];
-    if (il < k)
+    if (il < k)  // 递归处理左子树
         l[root] = build(il, k - 1, pl, pl + (k - 1 - il));
-    if (k < ir)
+    if (k < ir)  // 递归处理右子树
         r[root] = build(k + 1, ir, pl + (k - 1 - il) + 1, pr - 1);
     return root;
 }
@@ -48,6 +48,7 @@ int main()
         cin >> inorder[i];
         pos[inorder[i]] = i;
     }
+
     int root = build(0, n - 1, 0, n - 1);
     bfs(root);
 }

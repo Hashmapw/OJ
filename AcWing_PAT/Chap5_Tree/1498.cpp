@@ -63,7 +63,7 @@ int main()
 
         for (int i = 1; i <= n; i++)
         {
-            int depth = dfs(i, -1);
+            int depth = dfs(i, -1);  // 没有来源的点，深度标记为-1
             if (depth > max_depth)
             {
                 max_depth = depth;
