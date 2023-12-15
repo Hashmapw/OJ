@@ -41,13 +41,13 @@ void dfs(int u, int &k)
 {
     if (u == -1)
         return;
-    dfs(l[u], k);
+    dfs(l[u], k);   // 递归遍历左子树
 
     cout << u;
     if (++k != n)
         cout << " ";
 
-    dfs(r[u], k);
+    dfs(r[u], k);  // 递归遍历右子树
 }
 
 int main()
